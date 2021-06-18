@@ -1,0 +1,8 @@
+<textarea id="source" style="width:700px;height:500px;"></textarea>
+<textarea id="target" style="width:700px;height:500px;"></textarea>
+<script>
+    function extractEmails(text) { 
+        return text.match(/([a-zA-Z0-9._-]+@[a-zA-Z0-9._-]+\.[a-zA-Z0-9_-]+)/gi); 
+    }
+    $("#target").val(extractEmails($("#source").val()));
+</script>
